@@ -1,0 +1,77 @@
+header{
+    padding: 8px 70px;
+}
+
+header h1{
+    padding-top: 6.5px;
+}
+
+.container_card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 140px;
+    gap: 20px;
+}
+.cards{
+    background-color: var(--cinza_claro);
+    border-radius: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+    padding: 50px 35px;
+}
+.cards p{
+    font-size: 16px;
+    padding-top: 15px;
+}
+.cards strong{
+    font-size: 20px;
+}
+
+
+/* PÁGINA - SERVIÇOS */
+
+/* pt1 - capa */
+.servicos{
+    padding: 0 16%;
+}
+.servicos > p{
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* pt3 - links portfólio */
+#links_portfolio{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+#links_portfolio .botao_icone{
+    margin: 50px 0 0 0;
+}  
+.servicos .botao_icone a{
+    color: var(--cinza_claro);
+    font-weight: 700;
+}
+
+/* pt4 - link contato */
+.servicos .botao_icone{
+    margin-top: 50px;
+}  
+.servicos p + .botao_icone{
+    background-color: var(--azul_escuro);
+    margin-bottom: 140px;
+}
+
+
+/* PÁGINA - CONTATOS */
+.contato{
+    padding: 0 16%;
+}
+.contato .cards{
+    background-color: var(--marrom_claro);
+}
+.contato .cards p{
+    color: var(--cinza_claro);
+}
