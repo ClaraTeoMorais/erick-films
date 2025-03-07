@@ -1,0 +1,145 @@
+/* CAPA */
+
+/* PARTE 1 - CAPA */
+.pt1_capa{
+    background-image: url(../Imagens/Pag1_inicio/img1-theo2.png);
+    background-position: 75% 100%;
+    height: 860px;
+    padding-top: 300px;
+    margin-bottom: 0;
+} 
+
+h2{
+    text-align: left;
+}
+
+.legenda{
+    background-color: var(--marrom_claro);
+    color: var(--cinza_claro);
+    font-size: 18px;
+    margin: 70px 0 0 0;
+}
+
+
+/* PARTE 2 */
+.pt2{
+    background-image: url(../Imagens/Pag1_inicio/bg1.png);
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    align-items: center;
+    padding-right: 12%;
+}
+
+#texto_e_botao{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    max-width: 800px;
+    margin-left: 0;
+}
+
+#texto_e_botao > p{
+    max-width: 600px;
+    font-size: 26px;
+}
+
+#img_pt2_responsiva{
+    display: none;
+}
+
+
+/* PARTE 3 - QUEM SOU */
+.index #img_pt3_erick{
+    display: none;
+}
+
+.pt3_quemsou{
+    display: flex;
+    align-items: center;
+    padding: 140px 12%;
+}
+
+.pt3_quemsou h3{
+    margin-bottom: 35px;
+    font-size: 28px;
+}
+
+.pt3_quemsou picture img{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 60px;
+    margin-left: 100px;
+}
+
+
+/* PARTE 4 - FOTOS */
+.pt4_fotos{
+    background-image: url(../Imagens/Pag1_inicio/bg2.png);
+    background-repeat: no-repeat;  
+    padding: 70px 12% 0 12%;
+}
+
+.pt4_fotos p{
+    background-color: var(--marrom_escuro);
+    color: var(--cinza_claro);
+    width: max-content;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 22px;
+    margin: 0 auto;
+}
+
+.pt4_fotos ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.pt4_fotos li img{
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 70px;
+}
+
+
+/* PARTE 5 - CARROSSEL */
+.pt5_carrossel{
+    padding: 0 12%;
+    text-align: center;
+}
+.pt5_carrossel h3{
+    font-size: 28px;
+    margin-top: 140px;
+}
+.pt5_carrossel p{
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+.pt5_carrossel #logos{
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.pt5_carrossel ul{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    animation: 15s infinite carrossel linear;
+}
+#logos img{
+    filter: grayscale(100%);
+}
+#logos img:hover{
+    filter: grayscale(0%);
+}
+@keyframes carrossel {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-3000px);
+    }
+}
+

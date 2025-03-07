@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/paginas_internas.css">
+    <link rel="stylesheet" href="css/responsividade.css">
+
+    <!-- JAVA SCRIPT -->
+    <script src="js/script.js" defer></script>
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- MENU -> responsivo -->
+    <header id="header_responsivo">
+        <h1><a href="index.html"><img src="Imagens/Logo/camera2.svg" alt="Logo Erick Films"></a></h1>
+        <!-- <h1><a href="index.html"><img src="Imagens/Logo/logo_completa_p.svg" alt="Logo Erick Films"></a></h1> -->
+        
+        <button id="abrir_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+
+        <div id="caixa_menu">
+            <div id="botao_container">
+                <button id="fechar_menu">
+                    <img src="Imagens/Icones/voltar.svg" alt="Seta de voltar/fechar">
+                </button>
+            </div>
+
+            <nav class="menu_responsivo">
+                <figure><a href="index.html"><img src="Imagens/Logo/logo_completa_p.svg" alt="Logo Erick Films"></a></figure>
+                <ul>
+                    <li><a href="sobre_mim.html">Sobre mim</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="depoimentos.html">Depoimentos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+
+                <ul class="redes_sociais">
+                    <li><a href="https://api.whatsapp.com/send?phone=5583996550159"><img src="Imagens/Icones/whats_p.svg" alt="Whatsapp"></a></li>        
+                    <li><a href="https://www.instagram.com/erickrodriguesfotografia"><img src="Imagens/Icones/insta_p.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/erodriguesfotografia"><img src="Imagens/Icones/face_p.svg" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/eeericrod"><img src="Imagens/Icones/X_p.svg" alt="X"></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- MENU -> website -->
+    <header id="header_para_bootstrap">
+        <h1><a href="index.html"><img src="Imagens/Logo/camera2.svg" alt="Logo Erick Films"></a></h1>
+        <nav class="menu_pags">
+            <ul>
+                <li><a href="sobre_mim.html">Sobre mim</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="blog">
+        <!-- PARTE 1 - CAPA -->
+        <section class="pt1_capa">
+           <h2>Blog</h2>
+            <div class="legenda"> 
+                <figure><img src="Imagens/emojis/livro.png" alt="ícone de livro"></figure>
+                <p><em>Novidades, sugestões e dicas para eternizar momentos.</em></p>
+            </div> 
+        </section>
+
+        <!-- PARTE 2 - BARRA DE PESQUISA -->
+        <section>
+            <form action="resposta_enviada.html">
+                <label for="filtro">Classificar por:</label>
+                <select name="filtro" id="filtro">
+                    <option value="recente">Mais recente</option>
+                    <option value="antigo">Mais antigo</option>
+                    <option value="a-z">Ordem alfabética A-Z</option>
+                    <option value="z-a">Ordem alfabética Z-A</option>
+                </select>
+            </form>
+
+            <form action="resposta_enviada.html">
+                <label for="pesquisa">Pesquisar: </label>
+                <div id="barra_de_pesquisa">
+                    <input type="search" id="pesquisa">
+                    <input type="image" src="Imagens/emojis/lupa.png" alt="Lupa">
+                </div>
+            </form>
+        </section>
+        
+        <!-- PARTE 3 - ARTIGOS -->
+        <section class="container_artigos">
+            <div>
+                <div>
+                    <p class="mes">JAN</p>
+                    <div></div>
+                    <p>26</p>
+                </div>
+                <figure>
+                    <img src="Imagens/Pag3_blog/capas_artigos/artigo_01.26.png" alt="Fotografia">
+                </figure>
+                <div>
+                    <h4>Não fotografe os momentos do seu filho!</h4>
+                    <p>
+                        Seu filho vai querer reviver cada detalhe do aniversário no futuro. A importância da fotografia infantil vai muito além de simples cliques - é sobre preservar memórias que duram para sempre. Será que as fotos no celular são suficientes?<br>
+                        Descubra por que registrar esse momento com profissionalismo faz toda a diferença!
+                    </p>
+                    <p><em><a href="artigo.html">Leia o artigo completo</a></em></p>
+                </div>
+            </div>
+            
+            <div>
+                <div>
+                    <p class="mes">JAN</p>
+                    <div></div>
+                    <p>19</p>
+                </div>
+                <figure>
+                    <img src="Imagens/Pag3_blog/capas_artigos/artigo_01.19.png" alt="Fotografia"></a>
+                </figure>
+                <div>
+                    <h4>Dicas para fotos incríveis com o celular!</a></h4>
+                    <p>
+                        Acha que precisa de um equipamento profissional para tirar boas fotos? Com alguns truques simples, qualquer um pode capturar imagens impressionantes com o celular. Iluminação, enquadramento e edição fazem toda a diferença.<br>
+                        Aprenda a elevar suas fotos a outro nível!
+                    </p>
+                    <p><em><a href="#">Leia o artigo completo</a></em></p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <p class="mes">JAN</p>
+                    <div></div>
+                    <p>12</p>
+                </div>
+                <figure>
+                    <img src="Imagens/Pag3_blog/capas_artigos/artigo_01.12.png" alt="Fotografia">
+                </figure>
+                <div>
+                    <h4>Foto ou vídeo? Como escolher o melhor registro para cada momento!</h4>
+                    <p>
+                        Fotos congelam instantes, vídeos contam histórias. Mas qual é o ideal para seu evento?<br>
+                        Entenda as diferenças entre cada formato, os momentos em que um se destaca mais que o outro e descubra como combinar os dois para criar memórias inesquecíveis!
+                    </p>
+                    <p><em><a href="#">Leia o artigo completo</a></em></p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <p class="mes">JAN</p>
+                    <div></div>
+                    <p>05</p>
+                </div>
+                <figure>
+                    <img src="Imagens/Pag3_blog/capas_artigos/artigo_01.05.png" alt="Fotografia">
+                </figure>
+                <div>
+                    <h4>Os 5 melhores lugares em João Pessoa para ensaios fotográficos!</h4>
+                    <p>
+                        João Pessoa tem cenários incríveis para ensaios, desde praias paradisíacas até locais urbanos cheios de charme.<br>
+                        Descubra os melhores pontos para fotografar e escolha o cenário perfeito para seu ensaio fotográfico! 
+                    </p>
+                    <p><em><a href="#">Leia o artigo completo</a></em></p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <p class="mes">DEZ</p>
+                    <div></div>
+                    <p>29</p>
+                </div>
+                <figure>
+                    <img src="Imagens/Pag3_blog/capas_artigos/artigo_12.29.png" alt="Fotografia">
+                </figure>
+                <div>
+                    <h4>Ensaio em casa: Como fazer fotos profissionais sem sair de casa!</h4>
+                    <p>
+                        Nem sempre é preciso ir longe para capturar fotos incríveis! A sua casa pode ser o cenário perfeito para um ensaio cheio de significado e conforto.<br>
+                        Descubra como usar iluminação natural, objetos do dia a dia e composições criativas para registros surpreendentes!
+                    </p>
+                    <p><em><a href="#">Leia o artigo completo</a></em></p>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- PARTE 4 - PRÓX PÁG -->
+        <nav aria-label="...">
+            <ul class="pagination pagination-sm">
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <span></span>
+              <li class="page-item"><a class="page-link" href="blog2.html">2</a></li>
+              <span></span>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+        </nav>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="logo_e_nav">
+            <figure><a href="index.html"><img src="Imagens/Logo/logo_completa.svg" alt="Logo Erick Rodrigues"></a></figure>
+            <nav class="redes_sociais">
+                <ul>
+                    <li><a href="https://api.whatsapp.com/send?phone=5583996550159"><img src="Imagens/Icones/whats.svg" alt="Whatsapp"></a></li>        
+                    <li><a href="https://www.instagram.com/erickrodriguesfotografia"><img src="Imagens/Icones/insta.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/erodriguesfotografia"><img src="Imagens/Icones/face.svg" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/eeericrod"><img src="Imagens/Icones/X.svg" alt="X"></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="menu_pags">
+            <ul>
+                <li><a href="sobre_mim.html">Sobre mim</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <nav class="redes_sociais_responsivo">
+            <ul>
+                <li><a href="https://api.whatsapp.com/send?phone=5583996550159"><img src="Imagens/Icones/whats.svg" alt="Whatsapp"></a></li>        
+                <li><a href="https://www.instagram.com/erickrodriguesfotografia"><img src="Imagens/Icones/insta.svg" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/erodriguesfotografia"><img src="Imagens/Icones/face.svg" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com/eeericrod"><img src="Imagens/Icones/X.svg" alt="X"></a></li>
+            </ul>
+        </nav>
+
+        <p>Copyright © 2025 | Fotógrafo e Filmmaker em João Pessoa - PB</p>
+    </footer>
+    
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

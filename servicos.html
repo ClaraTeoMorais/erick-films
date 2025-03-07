@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Serviços</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/paginas_internas.css">
+    <link rel="stylesheet" href="css/responsividade.css">
+
+    <!-- JAVA SCRIPT -->
+    <script src="js/script.js" defer></script>
+
+    <!-- FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- MENU -> responsivo -->
+    <header id="header_responsivo">
+        <h1><a href="index.html"><img src="Imagens/Logo/camera2.svg" alt="Logo Erick Films"></a></h1>
+        <!-- <h1><a href="index.html"><img src="Imagens/Logo/logo_completa_p.svg" alt="Logo Erick Films"></a></h1> -->
+        
+        <button id="abrir_menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+            </svg>
+        </button>
+
+        <div id="caixa_menu">
+            <div id="botao_container">
+                <button id="fechar_menu">
+                    <img src="Imagens/Icones/voltar.svg" alt="Seta de voltar/fechar">
+                </button>
+            </div>
+
+            <nav class="menu_responsivo">
+                <figure><a href="index.html"><img src="Imagens/Logo/logo_completa_p.svg" alt="Logo Erick Films"></a></figure>
+                <ul>
+                    <li><a href="sobre_mim.html">Sobre mim</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="depoimentos.html">Depoimentos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+
+                <ul class="redes_sociais">
+                    <li><a href="https://api.whatsapp.com/send?phone=5583996550159"><img src="Imagens/Icones/whats_p.svg" alt="Whatsapp"></a></li>        
+                    <li><a href="https://www.instagram.com/erickrodriguesfotografia"><img src="Imagens/Icones/insta_p.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/erodriguesfotografia"><img src="Imagens/Icones/face_p.svg" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/eeericrod"><img src="Imagens/Icones/X_p.svg" alt="X"></a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- MENU -> website -->
+    <header>
+        <h1><a href="index.html"><img src="Imagens/Logo/camera2.svg" alt="Logo Erick Films"></a></h1>
+        <nav class="menu_pags">
+            <ul>
+                <li><a href="sobre_mim.html">Sobre mim</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="servicos">
+        <!-- PARTE 1 - CAPA -->
+        <section class="pt1_capa">
+            <h2>Serviços</h2>
+            <div class="legenda"> 
+                <figure><img src="Imagens/emojis/alvo.png" alt="ícone de Alvo"></figure>
+                <p><em>Fotografe e filme conosco cada comento para eternizá-los com emoção e qualidade</em></p>
+            </div>
+        </section>
+        
+        <section>
+            <!-- PARTE 2 - CARDS -->
+            <div class="container_card">
+                <div class="cards">
+                    <img src="Imagens/emojis/estrela.png" alt="Ícone de Estrela">
+                    <p><em><strong>Eventos infantis</strong></em></p>
+                    <p>Registre cada sorriso, brincadeira e emoção para que seu filho possa reviver esse dia especial no futuro!</p>
+                </div>
+                
+                <div class="cards">
+                    <img src="Imagens/emojis/por_do_sol.png" alt="Ícone de Pôr do Sol">
+                    <p><em><strong>Ensaios</strong></em></p>
+                    <p>Momentos únicos merecem ser eternizados com um olhar especial. Agende seu ensaio e tenha registros autênticos e cheios de emoção!</p>
+                </div>
+
+                <div class="cards">
+                    <img src="Imagens/emojis/predio.png" alt="Ícone de Prédio">
+                    <p><em><strong>Eventos corporativos</strong></em></p>
+                    <p>Profissionalismo e qualidade para destacar sua marca e registrar os melhores momentos do seu evento!</p>
+                </div>
+            </div>
+
+            <!-- PARTE 3 - LINKS PORTFÓLIO -->
+            <h3>Veja nosso portfólio!</h3>
+            <div id="links_portfolio">
+                <div class="legenda botao_icone">
+                    <a href="fotos.html">
+                        <figure><img src="Imagens/emojis/camera_p.png" alt="Ícone de Câmera"></figure>
+                        <p>Fotografias</p>
+                    </a> 
+                </div>
+
+                <div class="legenda botao_icone"> 
+                    <a href="filmagens.html">
+                        <figure><img src="Imagens/emojis/filme_p.png" alt="Ícone de Filme"></figure>
+                        <p>Filmagens</p>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- PARTE 4 - ENTRE EM CONTATO -->
+            <p>
+                Cada história merece ser registrada com carinho, qualidade e um olhar único. Seja um evento infantil, um ensaio especial ou um grande evento corporativo, estamos aqui para eternizar cada detalhe com fotos e vídeos que emocionam.<br>
+                
+                <br>Entre em contato agora mesmo! 
+                <br>Solicite um orçamento sem compromisso e descubra como podemos tornar seu momento ainda mais especial.
+            </p>
+            
+            <div class="legenda botao_icone"> 
+                <a href="contato.html">
+                    <figure><img src="Imagens/emojis/contato_p.png" alt="Ícone de Email"></figure>
+                    <p>Contatos</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="logo_e_nav">
+            <figure><a href="index.html"><img src="Imagens/Logo/logo_completa.svg" alt="Logo Erick Rodrigues"></a></figure>
+            <nav class="redes_sociais">
+                <ul>
+                    <li><a href="https://api.whatsapp.com/send?phone=5583996550159"><img src="Imagens/Icones/whats.svg" alt="Whatsapp"></a></li>        
+                    <li><a href="https://www.instagram.com/erickrodriguesfotografia"><img src="Imagens/Icones/insta.svg" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/erodriguesfotografia"><img src="Imagens/Icones/face.svg" alt="Facebook"></a></li>
+                    <li><a href="https://twitter.com/eeericrod"><img src="Imagens/Icones/X.svg" alt="X"></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="menu_pags">
+            <ul>
+                <li><a href="sobre_mim.html">Sobre mim</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <nav class="redes_sociais_responsivo">
+            <ul>
+                <li><a href="https://api.whatsapp.com/send?phone=5583996550159"><img src="Imagens/Icones/whats.svg" alt="Whatsapp"></a></li>        
+                <li><a href="https://www.instagram.com/erickrodriguesfotografia"><img src="Imagens/Icones/insta.svg" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com/erodriguesfotografia"><img src="Imagens/Icones/face.svg" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com/eeericrod"><img src="Imagens/Icones/X.svg" alt="X"></a></li>
+            </ul>
+        </nav>
+
+        <p>Copyright © 2025 | Fotógrafo e Filmmaker em João Pessoa - PB</p>
+    </footer>
+    
+</body>
+</html>
